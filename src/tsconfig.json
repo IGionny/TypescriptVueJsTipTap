@@ -1,0 +1,33 @@
+//https://www.typescriptlang.org/docs/handbook/compiler-options.html
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictFunctionTypes": false,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "rootDir": "Typescript",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,  
+    "target": "es5",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "lib": [
+      "es2015",
+      "es2015.iterable",
+      "dom"
+    ],
+    "outDir": "wwwroot/tjs"
+  },
+  "compileOnSave": true,
+  "include": [
+    "Typescript/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "wwwroot"
+  ]
+}
