@@ -1,5 +1,5 @@
 # Typescript VueJS TipTap
-A POC to show how to use the [VueJS TipTap component](https://github.com/vuejs/vue) with TypeScript
+A POC to show how to use the [VueJS](https://github.com/vuejs/vue)  [TipTap](https://github.com/scrumpy/tiptap) component with TypeScript
 
 ## Typescript definitions
 TipTap component to be imported, need a Typescript module definition (aka d.ts file).

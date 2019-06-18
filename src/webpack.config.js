@@ -15,7 +15,7 @@ module.exports = {
     publicPath: 'wwwroot/VueUI/',
     filename: '[name].js'
   },
-  
+
   mode: process.env.NODE_ENV,
   externals: {
     "vue": 'Vue'
@@ -25,10 +25,10 @@ module.exports = {
     alias: {
       //$ -> Exact match
       "vue$": "vue/dist/vue.esm.js",
-      "tiptap$" : path.resolve(__dirname, "node_modules", "tiptap/dist/tiptap.esm.js"),
-      "tiptap-commands$" : path.resolve(__dirname, "node_modules", "tiptap-commands/dist/commands.esm.js"),
-      "tiptap-extensions$" : path.resolve(__dirname, "node_modules", "tiptap-extensions/dist/extensions.esm.js"),
-      "tiptap-utils$" : path.resolve(__dirname, "node_modules", "tiptap-utils/dist/utils.esm.js"),
+      "tiptap$": path.resolve(__dirname, "node_modules", "tiptap/dist/tiptap.esm.js"),
+      "tiptap-commands$": path.resolve(__dirname, "node_modules", "tiptap-commands/dist/commands.esm.js"),
+      "tiptap-extensions$": path.resolve(__dirname, "node_modules", "tiptap-extensions/dist/extensions.esm.js"),
+      "tiptap-utils$": path.resolve(__dirname, "node_modules", "tiptap-utils/dist/utils.esm.js"),
 
     }
   },
@@ -38,7 +38,7 @@ module.exports = {
         include: path.resolve(__dirname, 'Typescript', "VueUI"),
         exclude: path.resolve(__dirname, 'node_modules'),
         use: [
-         // "cache-loader",
+          // "cache-loader",
           "vue-loader"
         ]
       },
