@@ -145,7 +145,6 @@ if (process.env.NODE_ENV === 'production') {
             booleans: true,
             properties: true,
             dead_code: true,
-            //warnings: false, // Suppress uglification warnings
             pure_getters: true,
             unsafe: true,
             unsafe_comps: true,
@@ -155,29 +154,10 @@ if (process.env.NODE_ENV === 'production') {
           output: {
             comments: false,
             beautify: false
-            //,preamble: banner,
           },
           minimize: true
         }
       }),
     ]
   };
-  /*
-    module.exports.optimization = {
-      minimizer: [
-        // we specify a custom UglifyJsPlugin here to get source maps in production
-        new UglifyJsPlugin({
-          include: /\.min\.js$/,
-          cache: true,
-          parallel: true,
-          uglifyOptions: {
-            compress: false,
-            ecma: 6,
-            mangle: true
-          },
-          sourceMap: true
-        })
-      ]
-    };
-    */
 }
